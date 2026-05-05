@@ -1,6 +1,20 @@
 --Using the database "FarmerMarketDB"
 USE FarmerMarketDB
 GO
+--DROP TABLES IN CASE THEY EXIST
+
+DROP TABLE IF EXISTS Price_history;
+DROP TABLE IF EXISTS Reviews;
+DROP TABLE IF EXISTS Orders;
+DROP TABLE IF EXISTS Buyers;
+DROP TABLE IF EXISTS Produce_listings;
+DROP TABLE IF EXISTS Categories;
+DROP TABLE IF EXISTS Farmers;
+DROP TABLE IF EXISTS Provinces;
+DROP TABLE IF EXISTS Buyer_types;
+DROP TABLE IF EXISTS Order_statuses;
+
+
 --Create tables
 CREATE TABLE Provinces (
 	province_id		INT				PRIMARY KEY IDENTITY(1,1),
